@@ -1,20 +1,31 @@
-import styles from './styles.module.css'
 import profile from '../../imagens/profile.svg';
 import bag from '../../imagens/bag.svg';
+import styled from 'styled-components';
 
+
+const Icons = styled.ul`
+      display: flex;
+    align-items: center;
+
+`
+
+const Icon = styled.li`
+  margin-right: 40px;
+  width: 25px;
+`
 
 function IconsHeader(){
     const icons = [profile, bag];
 
     return (     
         
-        <ul className={styles.icons}>
+        <Icons>
           {icons.map((icon) => (
-             <li className={styles.icon}><img src={icon} alt=''></img></li>
+             <Icon><img src={icon} alt=''></img></Icon>
 
           ))}
           
-        </ul>
+        </Icons>
     )
 }
 
