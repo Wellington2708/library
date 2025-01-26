@@ -1,5 +1,5 @@
-import profile from '../../imagens/profile.svg';
-import bag from '../../imagens/bag.svg';
+import profile from '../../images/profile.svg';
+import bag from '../../images/bag.svg';
 import styled from 'styled-components';
 
 
