@@ -1,6 +1,8 @@
 import { newBooks } from "./newBooks";
 import styled from 'styled-components';
 import { Title } from '../Title';
+import RecommendedCard from '../RecommendedCard/index';
+import bookRecommendation from '../../images/book.png';
 
 const NewBooksSection = styled.section`
     background-color: #EBECEE;
@@ -35,13 +37,13 @@ function NewBooks() {
                 return <img src={book.src} alt={book.name} />
             })}
             </NewBooksContainer>
-            <div>
-                <h3></h3>
-                <h4></h4>
-                <p></p>
-                <img src="" alt="" />
-                
-            </div>
+            <RecommendedCard 
+                title="You might be interested in"
+                subtitle="Liderança e Design"
+                description="Habilidades de gestão para alavancar sua carreira"
+                image={bookRecommendation}
+                alt="Building an application with the Google Platform"
+            />
         </NewBooksSection>
     )
 }
