@@ -22,14 +22,26 @@ const NewBooksContainer = styled.div`
 
 
 
-function NewBooks(){
+function NewBooks() {
     return (
         <NewBooksSection>
-            <Title>New Books</Title>
-            <NewBooksContainer>{newBooks.map((book) => {
+            <Title
+                color="#EB9B00"
+                fontSize="36px">
+                New Books
+            </Title>
+            <NewBooksContainer>
+                {newBooks.map((book) => {
                 return <img src={book.src} alt={book.name} />
             })}
             </NewBooksContainer>
+            <div>
+                <h3></h3>
+                <h4></h4>
+                <p></p>
+                <img src="" alt="" />
+                
+            </div>
         </NewBooksSection>
     )
 }
