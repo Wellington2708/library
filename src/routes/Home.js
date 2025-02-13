@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import Header from './components/Header';
-import Search from './components/Search';
-import NewBooks from './components/NewBooks';
+import Search from '../components/Search';
+import NewBooks from '../components/NewBooks';
 
 const AppContainer = styled.div`
    width: 100vw;
@@ -10,14 +9,13 @@ const AppContainer = styled.div`
 
 `
 
-function App() {
+function Home() {
   return (
     <AppContainer >
-      <Header /> 
       <Search />
       <NewBooks />
     </AppContainer>
   );
 }
 
-export default App;
+export default Home;
